@@ -10,16 +10,14 @@ public class FillAmountRotationOneWay : MonoBehaviour
     public float maxYRotation = 160f;
     private float currentMaxFillAmount = 0f;
 
-    // Use this for initialization
     void Start()
     {
         if (fillImage == null)
         {
-            Debug.LogError("Please assign an Image object in the inspector");
+            Debug.LogError("Assign an Image object");
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         float yRotation = Camera.main.transform.eulerAngles.y;
