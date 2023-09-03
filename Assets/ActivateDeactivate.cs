@@ -29,7 +29,6 @@ public class ActivateDeactivate : MonoBehaviour
         {
             ActivateObject();
             DeactivateObject();
-            DeactivateObject2();
 
             hasActivated = true;
         }
@@ -46,10 +45,6 @@ public class ActivateDeactivate : MonoBehaviour
     {
         objectToDeactivate1.SetActive(false);
         objectToDeactivate2.SetActive(false);
-    }
-
-    private void DeactivateObject2()
-    {
         objectToDeactivate3.SetActive(false);
     }
 }

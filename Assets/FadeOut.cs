@@ -14,14 +14,7 @@ public class FadeOut : MonoBehaviour
         imageComponent = GetComponent<Image>();  // Get the reference to the Image component
     }
 
-    // Called every time the object becomes enabled
-    private void OnEnable()
-    {
-        // Start the fade in process
-        StartCoroutine(FadeIn());
-    }
-
-    IEnumerator FadeIn()
+    public IEnumerator FadeIn()
     {
         // Initialize color and elapsed time
         Color color = imageComponent.color;
@@ -67,6 +60,6 @@ public class FadeOut : MonoBehaviour
         imageComponent.color = color;
 
         // Finally, deactivate the object
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }
