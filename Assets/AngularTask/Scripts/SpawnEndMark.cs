@@ -17,6 +17,7 @@ public class SpawnEndMark : MonoBehaviour
     private bool isSpaceButtonDown = false;
     private RotationLogger rotationLogger;
     public float yRotation;
+    public bool Anticlockwise;
 
     void Start()
     {
@@ -44,7 +45,7 @@ public class SpawnEndMark : MonoBehaviour
 
             if (rotationLogger != null && rotationLogger.DoesCsvExist())
             {
-                rotationLogger.LogRotation("MarkerSpawned", mainCamera.transform.rotation.eulerAngles);
+                rotationLogger.LogRotation("MarkerSpawned", mainCamera.transform.rotation.eulerAngles, mainCamera.transform.position, yRotation, Anticlockwise);
             }
 
             buttonPressedAgain = true;

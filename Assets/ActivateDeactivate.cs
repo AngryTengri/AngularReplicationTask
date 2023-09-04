@@ -11,6 +11,7 @@ public class ActivateDeactivate : MonoBehaviour
     public GameObject objectToDeactivate1;
     public GameObject objectToDeactivate2;
     public GameObject objectToDeactivate3;
+    public GameObject objectToDeactivate4;
 
     public float timeA;
 
@@ -46,5 +47,6 @@ public class ActivateDeactivate : MonoBehaviour
         objectToDeactivate1.SetActive(false);
         objectToDeactivate2.SetActive(false);
         objectToDeactivate3.SetActive(false);
+        objectToDeactivate4.SetActive(false);
     }
 }

@@ -26,6 +26,7 @@ public class Angles : MonoBehaviour
             {
                 // Instantiate the chosen prefab at specified positions
                 angularInstances[i] = Instantiate(prefabToUse, transform.position + new Vector3(0, 0, currentShift), Quaternion.identity, transform);
+                angularInstances[i].GetComponent<SpawnEndMark>().Anticlockwise = Anticlockwise[i];
 
                 // If not the first instance, set active to false
                 if (i != 0)
