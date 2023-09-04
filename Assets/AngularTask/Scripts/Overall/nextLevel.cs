@@ -40,7 +40,7 @@ public class nextLevel : MonoBehaviour
 
     public void LoadStartScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     public void LoadMainMenu()
