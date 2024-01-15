@@ -22,4 +22,4 @@ Features include Passthrough, Gaze Interactions, Data Logging, Spatial Audio, an
 
 ![23 - Navigation](https://github.com/AngryTengri/AngularReplicationTask/assets/83927886/146a7f6c-55a6-46de-9051-974bf15cbab5)
 
-
+[Link to the APK](https://drive.google.com/file/d/1F5ZFZselQTYY3VYB9zahovuqIDV17QIx/view?usp=sharing)
