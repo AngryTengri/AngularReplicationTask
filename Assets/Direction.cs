@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class Direction : MonoBehaviour
 {
-    public GameObject RightClockwiseDir;
-    public GameObject WrongClockwiseDir;
-    public GameObject RightAntiClockwiseDir;
-    public GameObject WrongAntiClockwiseDir;
+    [SerializeField] private GameObject RightClockwiseDir;
+    [SerializeField] private GameObject WrongClockwiseDir;
+    [SerializeField] private GameObject RightAntiClockwiseDir;
+    [SerializeField] private GameObject WrongAntiClockwiseDir;
 
-    public float alphaChange = 4f;
+    [SerializeField] private float alphaChange = 1f;
+    [SerializeField] private float lerpChange = 0.01f;
     public bool Clockwise = true;
     private float previousYRotation;
     private Camera mainCamera;
@@ -49,6 +50,8 @@ public class Direction : MonoBehaviour
             AdjustAlpha(WrongAntiClockwiseDir, -alphaChange * Time.deltaTime);
             AdjustAlpha(WrongClockwiseDir, alphaChange * Time.deltaTime);
             AdjustAlpha(RightAntiClockwiseDir, -alphaChange * Time.deltaTime);
+
+            
         }
         else if (rotationDelta < 0) // Rotating Anti-Clockwise
         {
@@ -56,6 +59,23 @@ public class Direction : MonoBehaviour
             AdjustAlpha(WrongAntiClockwiseDir, alphaChange * Time.deltaTime);
             AdjustAlpha(WrongClockwiseDir, -alphaChange * Time.deltaTime);
             AdjustAlpha(RightAntiClockwiseDir, alphaChange * Time.deltaTime);
+
+            
+        }
+
+        if (Clockwise)
+        {
+            AdjustAlpha(RightClockwiseDir, lerpChange);
+            AdjustAlpha(WrongAntiClockwiseDir, -lerpChange);
+            AdjustAlpha(WrongClockwiseDir, lerpChange);
+            AdjustAlpha(RightAntiClockwiseDir, -lerpChange);
+        }
+        else
+        {
+            AdjustAlpha(RightClockwiseDir, -lerpChange);
+            AdjustAlpha(WrongAntiClockwiseDir, lerpChange);
+            AdjustAlpha(WrongClockwiseDir, -lerpChange);
+            AdjustAlpha(RightAntiClockwiseDir, lerpChange);
         }
 
         previousYRotation = currentYRotation;
@@ -67,7 +87,7 @@ public class Direction : MonoBehaviour
         if (imageComponent != null)
         {
             Color color = imageComponent.color;
-            color.a = Mathf.Clamp(color.a + change, 0, 1);
+            color.a = Mathf.Clamp(color.a + change, 0, 1.5f);
             imageComponent.color = color;
         }
     }

@@ -449,14 +449,14 @@ MonoBehaviour:
   AngularTaskPrefabAntiClock: {fileID: 7652625030102803330, guid: 4c5803e37807f2845b637b9c9467d7af, type: 3}
   NextBlockRef: {fileID: 0}
   YRotations:
-  - 150
-  - 330
-  - 210
   - 120
   - 240
+  - 330
   - 60
   - 300
-  Anticlockwise: 00000100000100
+  - 210
+  - 150
+  Anticlockwise: 01000100000100
   Shift: 0.5
 --- !u!4 &547035403
 Transform:
@@ -798,14 +798,14 @@ MonoBehaviour:
   AngularTaskPrefabAntiClock: {fileID: 7652625030102803330, guid: 4c5803e37807f2845b637b9c9467d7af, type: 3}
   NextBlockRef: {fileID: 1299867816}
   YRotations:
-  - 150
   - 330
   - 210
-  - 120
   - 240
+  - 120
   - 60
   - 300
-  Anticlockwise: 00000100000100
+  - 150
+  Anticlockwise: 01000101000101
   Shift: 0.5
 --- !u!4 &902919009
 Transform:
@@ -995,14 +995,14 @@ MonoBehaviour:
   AngularTaskPrefabAntiClock: {fileID: 7652625030102803330, guid: 4c5803e37807f2845b637b9c9467d7af, type: 3}
   NextBlockRef: {fileID: 1990718290}
   YRotations:
-  - 150
-  - 330
-  - 210
-  - 120
   - 240
   - 60
+  - 120
+  - 330
+  - 210
+  - 150
   - 300
-  Anticlockwise: 00000100000100
+  Anticlockwise: 01000001000001
   Shift: 0.5
 --- !u!4 &1299867818
 Transform:
@@ -1052,14 +1052,14 @@ MonoBehaviour:
   AngularTaskPrefabAntiClock: {fileID: 7652625030102803330, guid: 4c5803e37807f2845b637b9c9467d7af, type: 3}
   NextBlockRef: {fileID: 547035401}
   YRotations:
-  - 150
-  - 330
   - 210
-  - 120
+  - 300
   - 240
   - 60
-  - 300
-  Anticlockwise: 00000100000100
+  - 120
+  - 150
+  - 330
+  Anticlockwise: 00010101000100
   Shift: 0.5
 --- !u!4 &1437133462
 Transform:
@@ -1153,14 +1153,14 @@ MonoBehaviour:
   AngularTaskPrefabAntiClock: {fileID: 7652625030102803330, guid: 4c5803e37807f2845b637b9c9467d7af, type: 3}
   NextBlockRef: {fileID: 1437133460}
   YRotations:
+  - 60
   - 150
   - 330
-  - 210
-  - 120
   - 240
-  - 60
+  - 120
   - 300
-  Anticlockwise: 00000100000100
+  - 210
+  Anticlockwise: 01010000010001
   Shift: 0.5
 --- !u!4 &1990718292
 Transform:

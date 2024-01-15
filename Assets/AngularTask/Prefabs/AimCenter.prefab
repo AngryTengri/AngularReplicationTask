@@ -620,5 +620,6 @@ MonoBehaviour:
   WrongClockwiseDir: {fileID: 4310719172166189577}
   RightAntiClockwiseDir: {fileID: 4310719171898998753}
   WrongAntiClockwiseDir: {fileID: 4310719171281221057}
-  alphaChange: 4
+  alphaChange: 2
+  lerpChange: 0.04
   Clockwise: 1
